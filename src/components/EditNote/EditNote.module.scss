@@ -1,0 +1,82 @@
+.edit-note-title {
+  > div {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+}
+
+.edit-note-tasks {
+  padding: 3rem 0 6rem;
+  > h3 {
+    margin: 0 0 1.4rem;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.edit-bottom-btns {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #a5a5a5;
+  button {
+    width: 120px;
+    margin: 0 5px;
+  }
+}
+
+.confirm-deleting-wrapp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-deleting-win {
+  width: 400px;
+  height: 160px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 3px 20px 5px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  > div {
+    text-align: center;
+    &:first-child {
+      color: rgb(233, 65, 0);
+      font-size: 22px;
+      font-weight: 600;
+    }
+    &:last-child {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 120px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.edit-note-not-found {
+  font-size: 24px;
+  color: #ccc;
+  text-align: center;
+  padding: 4rem 0;
+  > div {
+    margin-bottom: 4rem;
+  }
+}

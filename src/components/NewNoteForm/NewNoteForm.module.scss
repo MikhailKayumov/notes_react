@@ -1,0 +1,35 @@
+.NewNoteFormWrapp {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+  &.opened {
+    display: block;
+  }
+}
+.NewNoteForm {
+  margin: 10rem auto 0;
+  padding: 3rem 0;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 3px 20px 5px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  > h3 {
+    margin: 0;
+    padding: 0 3rem;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .NewNoteForm__body {
+    padding: 3rem 3rem 0;
+    button {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+}

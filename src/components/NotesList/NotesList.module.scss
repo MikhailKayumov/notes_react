@@ -1,0 +1,13 @@
+.NotesList {
+  padding-bottom: 2rem;
+  .NotesList__no-notes {
+    padding: 4rem;
+    text-align: center;
+    color: #a0a0a0;
+  }
+}
+.NotesList__open-new-note-form-btn-wrapp {
+  button {
+    width: 100%;
+  }
+}

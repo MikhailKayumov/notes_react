@@ -1,0 +1,53 @@
+.Task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &.edit-mode {
+    padding: 1.4rem 2rem;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px;
+    margin: 1.2rem 0;
+    &.done {
+      background-color: #e7e7e7;
+    }
+  }
+  &.done {
+    .Task__title, .Task__title-field {
+      text-decoration: line-through;
+      color: #666666;
+    }
+  }
+}
+
+.Task__left-cell, .Task__right-cell {
+  display: flex;
+}
+
+.Task__left-cell {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  input[type='checkbox'] {
+    margin: 5px 0;
+  }
+  .Task__title, .Task__title-field {
+    font-size: 18px;
+    margin-left: 1.2rem;
+  }
+  .Task__title-field {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    &:hover, &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  margin-right: 2rem;
+}
+
+.Task__right-cell {
+  button {
+    padding: 6px 2rem;
+  }
+}
